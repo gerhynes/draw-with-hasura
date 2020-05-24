@@ -5,6 +5,6 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 export default new ApolloClient({
   cache: new InMemoryCache(),
   link: new HttpLink({
-    uri: "draw-with-hasura.herokuapp.com",
+    uri: "https://draw-with-hasura.herokuapp.com/v1/graphql",
   }),
 });
